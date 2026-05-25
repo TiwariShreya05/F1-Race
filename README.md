@@ -1,10 +1,8 @@
-<div align="center">
 
 # 🏎️ F1 Race Outcome & Strategy Analyzer
 
 **An end-to-end Machine Learning project that analyzes historical Formula 1 race data to predict race finishing positions using a Random Forest Regressor.**
 
-</div>
 
 ---
 
@@ -132,6 +130,3 @@ This project was built to:
 
 ---
 
-<div align="center">
-Made with ❤️ and too much coffee ☕ — inspired by the relentless pursuit of the fastest lap.
-</div>
