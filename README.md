@@ -1,72 +1,72 @@
 🏎️ F1 Race Outcome & Strategy Analyzer
 An end-to-end Machine Learning project that analyzes historical Formula 1 race data to predict race finishing positions using a Random Forest Regressor.
+</div>
 
-The project covers the full ML lifecycle — from data preprocessing and exploratory analysis to model training, evaluation, and deployment using Flask with a simple interactive web interface.
+📌 Overview
+This project uses historical F1 race data to build a complete ML pipeline — from raw data preprocessing to a deployed web application. Users can input race parameters and receive predicted finishing positions through a simple browser interface.
+The project covers the full ML lifecycle:
 
-🚀 Project Overview
-This project uses historical F1 race data to:
+🧹 Data cleaning & preprocessing
+📊 Exploratory data analysis (EDA)
+⚙️ Feature engineering
+🌲 Model training (Random Forest Regressor)
+📈 Model evaluation & error analysis
+🚀 Deployment via Flask
 
-Clean and preprocess raw race datasets
-Perform exploratory data analysis (EDA)
-Engineer meaningful race features
-Train a Random Forest regression model
-Evaluate model performance
-Deploy the trained model using Flask
-Provide predictions through a simple frontend interface
-🧠 Machine Learning Workflow
-Data Cleaning & Preprocessing
-Exploratory Data Analysis (EDA)
-Feature Engineering
-Model Selection (Random Forest Regressor)
-Model Training
-Model Evaluation (Error Analysis & Metrics)
-Model Deployment via Flask
+
+🧠 ML Workflow
+Raw Data → Preprocessing → EDA → Feature Engineering → Model Training → Evaluation → Flask API → Frontend
+StepDescription1. Data CleaningHandle missing values, outliers, and format inconsistencies2. EDAVisualize distributions, correlations, and race trends3. Feature EngineeringConstruct meaningful predictors from raw race attributes4. Model SelectionRandom Forest Regressor (handles nonlinear relationships well)5. TrainingFit model on historical race data6. EvaluationRMSE, MAE, and residual/error analysis7. DeploymentServe predictions via Flask REST endpoint
+
 🛠️ Tech Stack
-Python
-Pandas
-NumPy
-Scikit-learn
-Matplotlib / Seaborn
-Flask
-HTML / CSS / JavaScript
+LayerToolsLanguagePython 3.8+DataPandas, NumPyMLScikit-learnVisualizationMatplotlib, SeabornBackendFlaskFrontendHTML, CSS, JavaScript
+
 📂 Project Structure
 F1_RACE_STRATEGY_ML/
 │
-├── data/                # Raw CSV datasets
-├── notebooks/           # Jupyter notebook (analysis & model training)
-├── models/              # Trained model file (excluded from GitHub)
-├── static/              # CSS & JavaScript files
-├── templates/           # HTML frontend
-├── app.py               # Flask backend application
-├── requirements.txt     # Project dependencies
+├── data/                   # Raw CSV datasets
+├── notebooks/              # Jupyter notebooks (EDA & model training)
+├── models/                 # Trained model artifacts (excluded from Git)
+├── static/                 # CSS & JavaScript files
+├── templates/              # HTML frontend templates
+├── app.py                  # Flask application entry point
+├── requirements.txt        # Python dependencies
 └── README.md
-🔍 How to Run the Project
-1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/<your-repo-name>.git
+
+🚀 Getting Started
+1. Clone the Repository
+bashgit clone https://github.com/<your-username>/F1_RACE_STRATEGY_ML.git
 cd F1_RACE_STRATEGY_ML
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-3️⃣ Run the Flask Application
-python app.py
-4️⃣ Open in Browser
+2. Install Dependencies
+bashpip install -r requirements.txt
+3. Run the Flask App
+bashpython app.py
+4. Open in Browser
 http://127.0.0.1:5000/
-You can now enter race parameters and receive predicted finishing positions.
+Enter race parameters to receive a predicted finishing position.
 
 📊 Key Insights
-Starting grid position significantly influences final race results.
-Historical driver performance impacts race outcomes.
-Random Forest performs well due to its ability to capture nonlinear feature relationships.
-Error analysis reveals higher variance in unpredictable race conditions.
-📌 Future Improvements
-Compare performance with Gradient Boosting / XGBoost
-Deploy the app publicly (Render / Railway)
-Add prediction confidence intervals
-Integrate real-time F1 API data
-Improve UI with advanced visualizations
+
+Grid position is the strongest predictor of final race outcome
+Historical driver performance provides meaningful signal for predictions
+Random Forest captures nonlinear feature interactions that linear models miss
+Higher prediction variance observed in races with unusual conditions (safety cars, retirements, weather)
+
+
+🔮 Future Improvements
+
+ Benchmark against Gradient Boosting / XGBoost
+ Add prediction confidence intervals
+ Integrate live F1 data via the Ergast or OpenF1 API
+ Improve UI with interactive lap-by-lap visualizations
+ Deploy publicly on Render or Railway
+
+
 🎯 Project Goals
 This project was built to:
 
-Practice end-to-end ML development
-Understand regression modeling in sports analytics
-Gain experience deploying ML models using Flask
-Build a production-style ML workflow
+Practice building end-to-end ML pipelines
+Apply regression modeling to sports analytics
+Gain hands-on experience deploying ML models with Flask
+Develop a production-style ML workflow from scratch
+
