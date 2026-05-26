@@ -9,7 +9,7 @@ with open("models/f1_finish_position_model.pkl", "rb") as f:
     model = pickle.load(f)
 
 @app.route("/")
-def home():
+def home(): 
     return render_template("index.html")
 
 @app.route("/predict", methods=["POST"])
