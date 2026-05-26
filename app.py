@@ -17,7 +17,7 @@ def predict():
     data = request.get_json()
 
     features = np.array([[
-        data["start_position"],
+        data["start_position"], 
         data["grid_normalized"],
         data["driver_avg_finish"],
         data["race_difficulty"]
