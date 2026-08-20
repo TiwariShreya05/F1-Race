@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 # Load model 
 with open("models/f1_finish_position_model.pkl", "rb") as f:
+    
     model = pickle.load(f)
 
 @app.route("/")
