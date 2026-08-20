@@ -16,6 +16,7 @@ def home():
 @app.route("/predict", methods=["POST"])
 
 def predict():
+    
     data = request.get_json()
 
     features = np.array([[
