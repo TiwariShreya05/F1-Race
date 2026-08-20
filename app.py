@@ -28,6 +28,7 @@ def predict():
     prediction = model.predict(features)[0]
 
     return jsonify({
+        
         "predicted_finish_position": round(float(prediction), 2)
     })
 
